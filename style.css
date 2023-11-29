@@ -16,14 +16,16 @@ img {
     width: 100%;
     overflow-x: scroll; /* permet de scroller horizontalement */
     scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
 
 
-.carrousel_ecran {
+.carrousel_ecran { 
     /* largeur du parent pour chaque enfant */
     /* permet de garder toute la largeur du parent */
     width: 100%;
-    flex:none
-    
+    flex: none; 
+    scroll-snap-align: start;
 }
 .carrousel_ecran figure {
     /* enlève les marges par défaut */
