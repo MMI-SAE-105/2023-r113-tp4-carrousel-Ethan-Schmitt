@@ -57,19 +57,3 @@
     </div>
 </body>
 </html>
-
-// Je n'arrive pas à faire fonctionner ce JavaScript//
-var buttons = document.querySelectorAll('.caroussel_liste-liens button');
-
-// Ajoutez un gestionnaire d'événements à chaque bouton
-for (var i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', function() {
-        // Enlevez la classe 'clicked' de tous les boutons
-        for (var j = 0; j < buttons.length; j++) {
-            buttons[j].classList.remove('clicked');
-        }
-
-        // Ajoutez la classe 'clicked' au bouton cliqué
-        this.classList.add('clicked');
-    });
-}
