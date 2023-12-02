@@ -39,6 +39,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 50%; 
+  
 }
   
 .carrousel_btn {
@@ -48,14 +49,14 @@ img {
     min(500px, 100vw) / 16 * 9 / 2 + 1rem
   ); /* centre verticalement ~50% vertical */
   transform: translateY(-50%); /* methode du point mort */
-  width: 2rem;
-  height: 2rem;
-  background: rgba(0,0,0,0.5);
-  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background: #B9861F;
+  border-radius: 60%;
   border: none;
   display: grid;
   place-content: center;
-  color: #fff;
+  color: #000000;
 }
   
 .carrousel_btn-avant {
@@ -75,4 +76,22 @@ img {
 }
 .actif{
   color: rgb(0, 17, 255);
+}
+body {
+  background-color: #482683; /* Remplacez par la couleur que vous voulez */
+}
+
+.carrousel {
+  /* Ajout d'un cadre */
+  border: 5px solid #000; /* Remplacez #000 par la couleur que vous voulez pour le cadre */
+
+  /* Modification de la forme */
+  border-radius: 10px; /* Remplacez 10px par la valeur que vous voulez pour arrondir les coins */
+
+  /* Ajout d'une ombre pour donner un effet de profondeur */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Remplacez les valeurs pour ajuster l'ombre */
+}
+
+h1 {
+  color: #B9861F; /* Remplacez #fff par la couleur que vous voulez pour le texte */
 }
