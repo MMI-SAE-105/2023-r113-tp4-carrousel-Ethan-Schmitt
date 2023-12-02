@@ -3,12 +3,18 @@
 display height flex flex none margin 
 max-width width width
 */ 
+
+/* Ajout des imports manquants */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Correction des sélecteurs */
 img {
   /* image responsive, largeur maxi */
   /* hauteur "auto" */
   max-width: 100%;
   height: auto;
 }
+
 .carrousel_parent-ecrans {
   /* aligne horizontalement les enfants */
   /* largeur du parent */
@@ -18,7 +24,6 @@ img {
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
 }
-
 
 .carrousel_ecran { 
   /* largeur du parent pour chaque enfant */
@@ -30,18 +35,25 @@ img {
   justify-content: center;
   align-items: center;
 }
+
 .carrousel_ecran figure {
   /* enlève les marges par défaut */
   margin: 0;
 }
+
 .carrousel {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%; 
   position: relative;
+
+  /* Ajout des styles pour le cadre */
+  border: 5px solid #000; /* Remplacez #000 par la couleur que vous voulez pour le cadre */
+  border-radius: 10px; /* Remplacez 10px par la valeur que vous voulez pour arrondir les coins */
+  box-shadow: 10 10 10px rgba(0, 0, 0, 0.5); /* Remplacez les valeurs pour ajuster l'ombre */
 }
-  
+
 .carrousel_btn {
   position: absolute;
   top: 50%;
@@ -61,14 +73,15 @@ img {
   top: 50%; /* Centrer verticalement */
   transform: translateY(-50%);
 }
-  
+
 .carrousel_btn-avant {
   left: 10px;
 }
-  
+
 .carrousel_btn-apres {
   right: 10px;
 }
+
 .caroussel_liste-liens {
   display: flex; /* aligne horizontalement les enfants */
   justify-content: center; /* centre horizontalement les enfants */
@@ -77,24 +90,31 @@ img {
   list-style: none; /* enlève les puces par défaut */
   gap: 10px; /* espace entre les enfants */
 }
-.actif{
+
+.actif {
   color: rgb(0, 17, 255);
 }
+
 body {
   background-color: #482683; /* Remplacez par la couleur que vous voulez */
 }
 
-.carrousel {
-  /* Ajout d'un cadre */
-  border: 5px solid #000; /* Remplacez #000 par la couleur que vous voulez pour le cadre */
-
-  /* Modification de la forme */
-  border-radius: 10px; /* Remplacez 10px par la valeur que vous voulez pour arrondir les coins */
-
-  /* Ajout d'une ombre pour donner un effet de profondeur */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Remplacez les valeurs pour ajuster l'ombre */
-}
-
 h1 {
   color: #B9861F; /* Remplacez #fff par la couleur que vous voulez pour le texte */
+  font-family: 'Roboto', sans-serif; /* Ajout de la police de caractères */
 }
+.button {
+  background-color: #B9861F; /* Remplacez #fff par la couleur que vous voulez pour le fond */
+  border: none;
+  color: #000000; /* Remplacez #fff par la couleur que vous voulez pour le texte */
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif; /* Ajout de la police de caractères */
+  margin: 4px 2px;
+  cursor: pointer;
+}
+```
+```
