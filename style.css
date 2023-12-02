@@ -99,3 +99,41 @@ h1 {
   color: #B9861F; /* Remplacez #fff par la couleur que vous voulez pour le texte */
   font-family: 'Roboto', sans-serif; /* Ajout de la police de caractères */
 }
+
+.carrousel_parent-ecrans::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Change la couleur de fond de la barre de défilement */
+.carrousel_parent-ecrans::-webkit-scrollbar-track {
+  background: #575757;
+}
+
+/* Change la couleur du curseur de la barre de défilement */
+.carrousel_parent-ecrans::-webkit-scrollbar-thumb {
+  background: #B9861F;
+}
+
+/* Change la couleur du curseur de la barre de défilement lors du survol */
+.carrousel_parent-ecrans::-webkit-scrollbar-thumb:hover {
+  background: #755412;
+}
+.caroussel_liste-liens button {
+  background-color: #343434; /* Changer la couleur de fond */
+  color: white; /* Changer la couleur du texte */
+  font-family: Arial, sans-serif; /* Changer la police */
+  font-size: 16px; /* Changer la taille du texte */
+  padding: 7px 7px; /* Changer l'espacement interne */
+  border: none; /* Enlever les bordures */
+  border-radius: 5px; /* Arrondir les coins */
+  cursor: pointer; /* Changer le curseur en main lors du survol */
+}
+
+/* Changer le style lors du survol */
+.caroussel_liste-liens button:hover  {
+  background-color: #B9861F; /* Changer la couleur de fond */
+}
+.caroussel_liste-liens button a {
+  color: rgb(255, 255, 255); /* Changer la couleur du texte */
+  text-decoration: none;
+}
